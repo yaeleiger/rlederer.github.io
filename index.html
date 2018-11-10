@@ -1,20 +1,51 @@
-<!doctype html>
-<html lang=''>
-<center>
-<head>
-  <body>
-<link rel="stylesheet" href="styles.css">
-    <h1>
-Waltham Resource Guide
-    </h1>
-   
-    <h2>
-      <a href = "map.html"> see map </a>
-      
-    </h2>
-
-    
-  </center>
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>Waltham Resources</title>
   </head>
+
+  <body onload = "loadMap()">
+    <h2>Waltham Resources</h2>
+    <div id = "map" style = "width:640px; height:480px;"></div>
+      <script>
+        // fake JSON call
+        function getJSONMarkers() {
+          const markers = [
+            {
+              name:  "Waltham Community Day Center",
+              location: [42.374250, -71.237430]
+            },
+            {
+              name: "Salvation Army",
+              location: [42.366010, -71.236430]
+            },
+            {
+              name: "Boys and Girls Club",
+              location: [42.3765, -71.2356]
+            }
+          ];
+          return markers;
+        }
+        function loadMap() {
+          // Initialize Google Maps
+          const mapOptions = {
+            center:new google.maps.LatLng(42.3765, -71.2356),
+            zoom: 11
+          }
+          const map = new google.maps.Map(document.getElementById("map"), mapOptions);
+          // Load JSON Data
+          const resourceMarkers = getJSONMarkers();
+          // Initialize Google Markers
+          for(resource of resourceMarkers) {
+            let marker = new google.maps.Marker({
+              map: map,
+              position: new google.maps.LatLng(resource.location[0], resource.location[1]),
+              title: resource.name
+            })
+          }
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBX9GFC7YWEnEBGM6aWQic5tq7OZ91jwFM&callback=initMap">
+      </script>
   </body>
 </html>
