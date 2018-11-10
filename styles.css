@@ -14,3 +14,7 @@ h2 {
 body {
     background-color: lightblue;
 }
+
+.boxed {
+  border: 1px solid green ;
+}
