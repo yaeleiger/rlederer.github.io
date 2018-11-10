@@ -4,3 +4,7 @@ h1{
   font-family: 'Arial', sans-serif;
   font-weight: 5pt;
 }
+
+body {
+    background-color: lightblue;
+}
