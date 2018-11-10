@@ -6,6 +6,11 @@ h1{
   text-decoration: bold;
 }
 
+h2 {
+  font-size: 20px;
+  color: red;
+}
+
 body {
     background-color: #FFD700;
 }
