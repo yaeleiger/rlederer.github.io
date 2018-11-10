@@ -1,0 +1,468 @@
+{
+	"type" : "FeatureCollection",
+	"name" : "JSONFeature",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"Resource" : "Waltham Boys & Girls Club",
+				"address" : "20 Exchange St",
+				"city" : "Waltham",
+				"state" : "MA",
+				"resource category" : "free food",
+				"conditions/description" : "Dinner for youth 18 & under (or currently in high school)",
+				"days open" : "Monday-Friday",
+				"time open" : "4:00 PM",
+				"time close" : "6:00 PM",
+				"website" : "https://walthambgc.org/",
+				"phone #" : "781-893-6620",
+				"hotline #" : "",
+				"religious affliation" : "none",
+				"cost" : "free",
+				"documentation req." : "no"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"Resource" : "Salvation Army Food Pantry",
+				"address" : "33 Myrtle St",
+				"city" : "Waltham",
+				"state" : "MA",
+				"resource category" : "free food",
+				"conditions/description" : "Food Pantry",
+				"days open" : "Monday-Friday",
+				"time open" : "9:00 AM",
+				"time close" : "1:00 PM",
+				"website" : "https://massachusetts.salvationarmy.org/MA/Waltham",
+				"phone #" : "(781) 894-0413",
+				"hotline #" : "",
+				"religious affliation" : "Christian",
+				"cost" : "free",
+				"documentation req." : "no"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"Resource" : "Salvation Army Hope Kitchen",
+				"address" : "33 Myrtle St",
+				"city" : "Waltham",
+				"state" : "MA",
+				"resource category" : "free food",
+				"conditions/description" : "Serving breakfast and lunch (lunch starting at 11:30)",
+				"days open" : "Monday-Friday",
+				"time open" : "9:30 AM",
+				"time close" : "",
+				"website" : "https://massachusetts.salvationarmy.org/MA/Waltham",
+				"phone #" : "(781) 894-0413",
+				"hotline #" : "",
+				"religious affliation" : "Christian",
+				"cost" : "free",
+				"documentation req." : "no"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"Resource" : "Waltham Community Day Center",
+				"address" : "16 Felton St",
+				"city" : "Waltham",
+				"state" : "MA",
+				"resource category" : "free food",
+				"conditions/description" : "Serves lunch, day shelter",
+				"days open" : "Monday-Friday",
+				"time open" : "12:30 PM",
+				"time close" : "16:30",
+				"website" : "https://www.communitydaycenter.org/",
+				"phone #" : "(781) 392-6311",
+				"hotline #" : "",
+				"religious affliation" : "none",
+				"cost" : "free",
+				"documentation req." : "no"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"Resource" : "Bristol Lodge Women's Shelter",
+				"address" : "205 Bacon St",
+				"city" : "Waltham",
+				"state" : "MA",
+				"resource category" : "free food, housing",
+				"conditions/description" : "A first come, first serve dry shelter with 12 beds available each night for women 18+  (call after 4 pm only)",
+				"days open" : "Monday-Friday",
+				"time open" : "9:00 AM",
+				"time close" : "",
+				"website" : "https://www.mhsainc.org/womensshelter",
+				"phone #" : "781-894-1225",
+				"hotline #" : "",
+				"religious affliation" : "none",
+				"cost" : "free",
+				"documentation req." : "no"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"Resource" : "Bristol Lodge Men's Shelter",
+				"address" : "27 Lexington St",
+				"city" : "Waltham",
+				"state" : "MA",
+				"resource category" : "free food, housing",
+				"conditions/description" : "A first come, first serve dry shelter with 45 beds available each night for men 18+",
+				"days open" : "Monday-Friday",
+				"time open" : "9:00 AM",
+				"time close" : "",
+				"website" : "https://www.mhsainc.org/mensshelter",
+				"phone #" : "",
+				"hotline #" : "",
+				"religious affliation" : "none",
+				"cost" : "free",
+				"documentation req." : "no"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"Resource" : "Reach Beyond Domestic Violence",
+				"address" : "PO Box 540024",
+				"city" : "Waltham",
+				"state" : "MA",
+				"resource category" : "hotline, housing",
+				"conditions/description" : "emergency shelter for women and women with children, including boys over age 12. Stay is 3 months. Social worker for children offered",
+				"days open" : "Every Day",
+				"time open" : "n/a",
+				"time close" : "n/a",
+				"website" : "reachma.org",
+				"phone #" : "781-891-0724",
+				"hotline #" : "800-899-4000",
+				"religious affliation" : "none",
+				"cost" : "free",
+				"documentation req." : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"Resource" : "Mary's House",
+				"address" : "62 Church Street",
+				"city" : "Waltham",
+				"state" : "MA",
+				"resource category" : "housing",
+				"conditions/description" : "8 spaces. need refferal from dept housing and community development (DCHD)",
+				"days open" : "Every Day",
+				"time open" : "n/a",
+				"time close" : "n/a",
+				"website" : "https://www.mass.gov/orgs/housing-and-community-development",
+				"phone #" : "(866) 584-0653",
+				"hotline #" : "(866) 584-0653",
+				"religious affliation" : "none",
+				"cost" : "free",
+				"documentation req." : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"Resource" : "MASS Search for Emergency Housing - DHCD",
+				"address" : "100 Cambridge St, Suite 300,",
+				"city" : "Boston",
+				"state" : "MA",
+				"resource category" : "housing",
+				"conditions/description" : "Emergency housing contact",
+				"days open" : "Monday-Friday",
+				"time open" : "8:45 AM",
+				"time close" : "5:00 PM",
+				"website" : "https://www.mass.gov/service-details/emergency-housing-assistance-resource-information",
+				"phone #" : "(617) 573-1106",
+				"hotline #" : "",
+				"religious affliation" : "none",
+				"cost" : "free",
+				"documentation req." : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"Resource" : "WATCH CDC",
+				"address" : "24 Crescent St, Suite 201",
+				"city" : "Waltham",
+				"state" : "MA",
+				"resource category" : "housing search, financial assistance, referrals, fuel assistance",
+				"conditions/description" : "Community resource for housing assistance, community organizing, and adult education. Housing clinic every Monday and Thursday night from 7-8:30pm to assist with any housing related issues.",
+				"days open" : "Monday-Friday",
+				"time open" : "",
+				"time close" : "",
+				"website" : "",
+				"phone #" : "",
+				"hotline #" : "",
+				"religious affliation" : "",
+				"cost" : "",
+				"documentation req." : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"Resource" : "Santa Maria House",
+				"address" : "11 Waltham St",
+				"city" : "Boston",
+				"state" : "MA",
+				"resource category" : "housing",
+				"conditions/description" : "Women receive a light meal, showers, clean clothes, and a bed for up to 7 consecutive nights. May request another stay after a 30-day respite. need referrals from hospital/medical center, social services, police",
+				"days open" : "Every Day",
+				"time open" : "7:00 PM",
+				"time close" : "8:00 AM",
+				"website" : "https://www.housingworks.net/program/1257",
+				"phone #" : "617-423-4366",
+				"hotline #" : "",
+				"religious affliation" : "none",
+				"cost" : "free",
+				"documentation req." : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"Resource" : "Bristol Lodge Soup Kitchen",
+				"address" : "545 Moody St",
+				"city" : "Waltham",
+				"state" : "MA",
+				"resource category" : "free food",
+				"conditions/description" : "Snacks and coffee served starting at 4:00 pm, with hot dinner service starting at 5:00 pm. Open 365 days per year!",
+				"days open" : "Every Day",
+				"time open" : "4:00 PM",
+				"time close" : "",
+				"website" : "https://www.mhsainc.org/soupkitchen",
+				"phone #" : "781-883-2050",
+				"hotline #" : "",
+				"religious affliation" : "none",
+				"cost" : "free",
+				"documentation req." : "no"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"Resource" : "State Emergency Center for Familes",
+				"address" : "1010 Massachusetts Avenue - New Market Square",
+				"city" : "Booston",
+				"state" : "MA",
+				"resource category" : "housing",
+				"conditions/description" : "",
+				"days open" : "Monday-Friday",
+				"time open" : "8:00 AM",
+				"time close" : "5:00 PM",
+				"website" : "http://watchcdc.org/community-resource-guide-familly-shelters/",
+				"phone #" : "866-584-0653",
+				"hotline #" : "",
+				"religious affliation" : "none",
+				"cost" : "free",
+				"documentation req." : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"Resource" : "Bristol Lodge Food Pantry",
+				"address" : "545 Moody St",
+				"city" : "Waltham",
+				"state" : "MA",
+				"resource category" : "free food",
+				"conditions/description" : "Food Pantry offering a variety of nutritious options, including fresh, frozen, and canned goods",
+				"days open" : "Wednesday",
+				"time open" : "9:00 AM",
+				"time close" : "12:00 PM",
+				"website" : "https://www.mhsainc.org/foodpantry",
+				"phone #" : "781-883-2050",
+				"hotline #" : "",
+				"religious affliation" : "none",
+				"cost" : "free",
+				"documentation req." : "no"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"Resource" : "Jewish Family and Services",
+				"address" : "430 Main St",
+				"city" : "Waltham",
+				"state" : "MA",
+				"resource category" : "housing, free food",
+				"conditions/description" : "",
+				"days open" : "Monday-Friday",
+				"time open" : "9:00 AM",
+				"time close" : "5:00 PM",
+				"website" : "https://www.jfcsboston.org/",
+				"phone #" : "781-647-5327 x 1372",
+				"hotline #" : "",
+				"religious affliation" : "jewish",
+				"cost" : "",
+				"documentation req." : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"Resource" : "Hurley House",
+				"address" : "12 Lowell St",
+				"city" : "Waltham",
+				"state" : "MA",
+				"resource category" : "substance use recovery",
+				"conditions/description" : "Residential, six-month substance use disorder recovery program for 20 adult men. Professional service provider must call 617-442-2069 and speak with Central Intake staff to register.",
+				"days open" : "Monday-Friday",
+				"time open" : "",
+				"time close" : "",
+				"website" : "https://www.mhsainc.org/hurleyhouse",
+				"phone #" : "781-899-2540",
+				"hotline #" : "",
+				"religious affliation" : "none",
+				"cost" : "",
+				"documentation req." : "no"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"Resource" : "Food Source Hotline",
+				"address" : "",
+				"city" : "Waltham",
+				"state" : "MA",
+				"resource category" : "free food, hotline",
+				"conditions/description" : "",
+				"days open" : "Monday-Friday",
+				"time open" : "8:00 AM",
+				"time close" : "7:00 PM",
+				"website" : "",
+				"phone #" : "",
+				"hotline #" : "800-645-8333",
+				"religious affliation" : "none",
+				"cost" : "free",
+				"documentation req." : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"Resource" : "Wacth City Market",
+				"address" : "75 Church Street",
+				"city" : "Waltham",
+				"state" : "MA",
+				"resource category" : "free food",
+				"conditions/description" : "Each person/family can shop for up to 50 lbs of food including produce, meats, dairy and staple grocery items. can officially register emailing name to wpsmarket@walthampublicschools.org",
+				"days open" : "First Thursday of Month",
+				"time open" : "4:00 PM",
+				"time close" : "6:00 PM",
+				"website" : "",
+				"phone #" : "781-314-5400",
+				"hotline #" : "",
+				"religious affliation" : "none",
+				"cost" : "free",
+				"documentation req." : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"Resource" : "Charles River Community Health",
+				"address" : "43 Foundry Ave",
+				"city" : "Waltham",
+				"state" : "MA",
+				"resource category" : "health care",
+				"conditions/description" : "provides free legel clinie for immigration family.  Free flu shot. Appointment required",
+				"days open" : "Monday-Saturday",
+				"time open" : "8:30 AM",
+				"time close" : "Mon,Tue,Thur 9pm Wed Fri 5pm Sat 1pm",
+				"website" : "http://www.charlesriverhealth.org",
+				"phone #" : "781-693-3800",
+				"hotline #" : "",
+				"religious affliation" : "none",
+				"cost" : "free",
+				"documentation req." : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"Resource" : "Immanuel Methodist Food Pantry",
+				"address" : "545 Moody St",
+				"city" : "Waltham",
+				"state" : "MA",
+				"resource category" : "free food",
+				"conditions/description" : "",
+				"days open" : "unclear, says call to inquire",
+				"time open" : "",
+				"time close" : "",
+				"website" : "",
+				"phone #" : "781-883-2050",
+				"hotline #" : "",
+				"religious affliation" : "it is a church? christian?",
+				"cost" : "free",
+				"documentation req." : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"Resource" : "Middlesex Human Service Agency",
+				"address" : "200 Trapelo Road",
+				"city" : "Waltham",
+				"state" : "MA",
+				"resource category" : "substance use recovery",
+				"conditions/description" : "The MHSA operates several shelters and a soup kitchen. Two shelters (Answer House and Sullivan House) are specifically for individuals in need of a substance abuse recovery shelter.",
+				"days open" : "",
+				"time open" : "",
+				"time close" : "",
+				"website" : "",
+				"phone #" : "781-899-0357",
+				"hotline #" : "",
+				"religious affliation" : "",
+				"cost" : "",
+				"documentation req." : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"Resource" : "The Right to Immigration (TRII)",
+				"address" : "24 Crescent Street, Suite #201",
+				"city" : "Waltham",
+				"state" : "MA",
+				"resource category" : "immigration help",
+				"conditions/description" : "",
+				"days open" : "Monday-Friday",
+				"time open" : "",
+				"time close" : "",
+				"website" : "",
+				"phone #" : "(781) 891-6689",
+				"hotline #" : "",
+				"religious affliation" : "none",
+				"cost" : "free",
+				"documentation req." : "everyone welcome"
+			}
+		}
+	]
+}
