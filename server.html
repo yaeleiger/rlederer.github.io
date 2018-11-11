@@ -73,7 +73,7 @@
           <br>
           <button id="#housing">Housing</button>
           <br>
-          <button id="#immigration">Immigration</button>
+          <button id="immigration">Immigration</button>
           <br>
           <button id="#legaladvice">Legal Advice</button>
           <br>
@@ -104,11 +104,6 @@
 
 
       // }
-
-
-
-
-
         // fake JSON call
         function getJSONMarkers() {
            const markers = [
@@ -131,6 +126,8 @@
           return markers;
         }
 
+        var globalMap;
+
         function loadBaseMap() {
 
           // Initialize Google Maps
@@ -139,11 +136,12 @@
             zoom: 11
           }
 
-          const map = new google.maps.Map(document.getElementById("map"), mapOptions);
+          const map =  new google.maps.Map(document.getElementById("map"), mapOptions);
+          globalMap = map;
         }
 
-        // function loadMap(typer) {
 
+        // function loadMap(typer) {
         food.addEventListener('click', () =>{
           // console.log(typer)
           // Load JSON Data
@@ -155,16 +153,39 @@
             if(resource.type==('food')){
               console.log(resource.type);
               let marker = new google.maps.Marker({
-                map: map,
+                map: globalMap,
                 position: new google.maps.LatLng(resource.location[0], resource.location[1]),
                 title: resource.name
               })
-            
-              loadBaseMap();
+
+
             }
 
           }
         });
+
+        immigration.addEventListener('click', () =>{
+          // console.log(typer)
+          // Load JSON Data
+          const resourceMarkers = getJSONMarkers();
+          // Initialize Google Markers
+          for(resource of resourceMarkers) {
+            // console.log(typer);
+            if(resource.type==('immigration')){
+              console.log(resource.type);
+              let marker = new google.maps.Marker({
+                map: globalMap,
+                position: new google.maps.LatLng(resource.location[0], resource.location[1]),
+                title: resource.name
+              })
+
+
+            }
+
+          }
+        });
+
+
       </script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBX9GFC7YWEnEBGM6aWQic5tq7OZ91jwFM&callback=initMap">
       </script>
