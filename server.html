@@ -67,14 +67,19 @@
       <div class="dropdown">
       <button onclick="myFunction()" class="dropbtn">Resource Type</button>
         <div id="myDropdown" class="dropdown-content">
-          <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-          <a href="https://www.google.com">Food</a>
-          <a href="#healthcare">Health Care</a>
-          <a href="#housing">Housing</a>
-          <a href="#immigration">Immigration</a>
-          <a href="#legaladvice">Legal Advice</a>
-          <a href="#substancehelp">Substance Dependency Help</a>
-          <a href="#LGBTQ">LGBTQ+</a>
+          <button id="food">Food</button>
+          <br>
+          <button id="#healthcare">Health Care</button>
+          <br>
+          <button id="#housing">Housing</button>
+          <br>
+          <button id="#immigration">Immigration</button>
+          <br>
+          <button id="#legaladvice">Legal Advice</button>
+          <br>
+          <button id="#substancehelp">Substance Dependency Help</button>
+          <br>
+          <button id="#LGBTQ">LGBTQ+</button>
         </div>
       </div>
 
@@ -86,6 +91,15 @@
           document.getElementById("myDropdown").classList.toggle("show");
 
       }
+
+      var btn1 = document.getElementByID('btn1'),
+      btn2 = doocument.getElementByID('btn2');
+
+      function testFunction(){
+
+      }
+      btn1.onclick = testFunction;
+      btn2.onclick = testFunction;
 
       function filterFunction() {
           var input, filter, ul, li, a, i;
@@ -101,7 +115,7 @@
               }
           }
       }
-    
+
 
 
         // fake JSON call
