@@ -1,71 +1,21 @@
 <!DOCTYPE html>
 <html>
+<center>
   <head>
+  <link rel="stylesheet" href="styles.css">
    <title>Waltham Resources</title>
   </head>
 
   <body onload = "loadBaseMap()">
-    <h2>Waltham Resources</h2>
-    <div id = "map" style = "width:640px; height:480px;"></div>
-    <style>
-      .dropbtn {
-          background-color: #c61aff;
-          color: white;
-          padding: 16px;
-          font-size: 16px;
-          border: none;
-          cursor: pointer;
-      }
+    <h1><i>Waltham Resource Guide</i></h1>
 
-      .dropbtn:hover, .dropbtn:focus {
-          background-color: #3e8e41;
-      }
-
-      #myInput {
-          border-box: box-sizing;
-          background-image: url('searchicon.png');
-          background-position: 14px 12px;
-          background-repeat: no-repeat;
-          font-size: 16px;
-          padding: 14px 20px 12px 45px;
-          border: none;
-          border-bottom: 1px solid #ddd;
-      }
-
-      #myInput:focus {outline: 3px solid #ddd;}
-
-      .dropdown {
-          position: relative;
-          display: inline-block;
-      }
-
-      .dropdown-content {
-          display: none;
-          position: absolute;
-          background-color: #f6f6f6;
-          min-width: 230px;
-          overflow: auto;
-          border: 1px solid #ddd;
-          z-index: 1;
-      }
-
-      .dropdown-content a {
-          color: black;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block;
-      }
-
-      .dropdown a:hover {background-color: #ddd;}
-
-      .show {display: block;}
-      </style>
+    <div id = "map" style = "width:640px; height:480px; display: inline-block"> </div>
       </head>
       <body>
 
 
       <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">Resource Type</button>
+      <button onclick="myFunction()" class="dropbtn">What types of resources do you need?</button>
         <div id="myDropdown" class="dropdown-content">
           <button id='food'>Food</button>
           <br>
@@ -95,7 +45,13 @@
       //
       // function myFunction2(){
         var food = document.getElementById('food'),
-        immigration = document.getElementById('immigration');
+        housing = document.getElementById('housing'),
+        immigration = document.getElementById('immigration'),
+        healthcare = document.getElementById('healthcare'),
+        immigration = document.getElementById('immigration'),
+        legaladvice = document.getElementById('legaladvice'),
+        substancehelp = document.getElementById('substancehelp'),
+        lgbtq = document.getElementById('LGBTQ');
 
 
         // food.addEventListener("click", loadMap('food'));
@@ -126,17 +82,24 @@
         }
 
         var globalMap;
+        var greenStar = 'https://i.imgur.com/bdR1x8n.png';
+        var blueStar = 'https://i.imgur.com/xdPAlz9.png';
+        var purpleStar = 'https://i.imgur.com/lTWfWLq.png';
+        var yellowStar = 'https://i.imgur.com/ssbX3PV.png';
+        var redStar = 'https://i.imgur.com/Z1hkaW1.png';
+        var blackStar = 'https://i.imgur.com/xckV6jl.png';
+        var markerImage = 'https://image.ibb.co/m5CUCq/star.png';
 
         function loadBaseMap() {
-
           // Initialize Google Maps
           const mapOptions = {
-            center:new google.maps.LatLng(42.3765, -71.2356),
+            center:new google.maps.LatLng(42.3767, -71.2356),
             zoom: 11
           }
 
           const map =  new google.maps.Map(document.getElementById("map"), mapOptions);
           globalMap = map;
+
         }
 
 
@@ -151,13 +114,13 @@
               let marker = new google.maps.Marker({
                 map: globalMap,
                 position: new google.maps.LatLng(resource.location[0], resource.location[1]),
-                title: resource.name
+                title: resource.name,
+                icon: greenStar
               })
 
             }
           }
         });
-
 
         immigration.addEventListener('click', () =>{
           // console.log(typer)
@@ -169,7 +132,8 @@
               let marker = new google.maps.Marker({
                 map: globalMap,
                 position: new google.maps.LatLng(resource.location[0], resource.location[1]),
-                title: resource.name
+                title: resource.name,
+                icon: redStar
               })
 
             }
@@ -180,5 +144,9 @@
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBX9GFC7YWEnEBGM6aWQic5tq7OZ91jwFM&callback=initMap">
       </script>
       
+      <br><br><br><i>
+          <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div></i>
+
   </body>
+</center>
 </html>
