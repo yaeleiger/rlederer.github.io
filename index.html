@@ -38,13 +38,15 @@
           const map = new google.maps.Map(document.getElementById("map"), mapOptions);
           // Load JSON Data
           const resourceMarkers = getJSONMarkers();
+          var markerImage = 'https://image.ibb.co/m5CUCq/star.png';
           // Initialize Google Markers
           for(resource of resourceMarkers) {
             if (resource.type == "food") {
               let marker = new google.maps.Marker({
                 map: map,
                 position: new google.maps.LatLng(resource.location[0], resource.location[1]),
-                title: resource.name
+                title: resource.name,
+                icon: markerImage
               })
             }
           }
