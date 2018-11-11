@@ -102,7 +102,6 @@
         // immigration.addEventListener("click", loadMap('immigration'));
 
 
-
       // }
         // fake JSON call
         function getJSONMarkers() {
@@ -147,21 +146,18 @@
           // Load JSON Data
           const resourceMarkers = getJSONMarkers();
           // Initialize Google Markers
-          var markerImage = 'https://www.freeiconspng.com/uploads/black-star-icon-6.png';
           for(resource of resourceMarkers) {
-
-            // console.log(typer);
-            if(resource.type==('food')){
-              console.log(resource.type);
+            if(resource.type==("food")){
               let marker = new google.maps.Marker({
                 map: globalMap,
                 position: new google.maps.LatLng(resource.location[0], resource.location[1]),
-                title: resource.name,
-                icon: image
+                title: resource.name
               })
+
             }
           }
         });
+
 
         immigration.addEventListener('click', () =>{
           // console.log(typer)
@@ -169,22 +165,20 @@
           const resourceMarkers = getJSONMarkers();
           // Initialize Google Markers
           for(resource of resourceMarkers) {
-            // console.log(typer);
-            if(resource.type==('immigration')){
-              console.log(resource.type);
+            if(resource.type==("immigration")){
               let marker = new google.maps.Marker({
                 map: globalMap,
                 position: new google.maps.LatLng(resource.location[0], resource.location[1]),
                 title: resource.name
               })
 
-
             }
-
           }
         });
       </script>
+
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBX9GFC7YWEnEBGM6aWQic5tq7OZ91jwFM&callback=initMap">
       </script>
+      
   </body>
 </html>
