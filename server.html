@@ -11,20 +11,24 @@
 
         // fake JSON call
         function getJSONMarkers() {
-          const markers = [
+           const markers = [
             {
               name:  "Rixos The Palm",
-              location: [25.1212, 55.1535]
+              location: [25.1212, 55.1535],
+              type: "hello"
 
 
             },
             {
-              name: "Shangri-La Hotel",
-              location: [25.2084, 55.2719]
+              name: "Shangri-La resource",
+              location: [25.2084, 55.2719],
+              type: "hello"
             },
             {
               name: "Grand Hyatt",
-              location: [42.3765, -71.2356]
+              location: [42.3765, -71.2356],
+              type: "food"
+
             }
           ];
           return markers;
@@ -44,16 +48,19 @@
           const map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
           // Load JSON Data
-          const hotelMarkers = getJSONMarkers();
+          const resourceMarkers = getJSONMarkers();
 
           // Initialize Google Markers
-          for(hotel of hotelMarkers) {
-            let marker = new google.maps.Marker({
-              map: map,
-              position: new google.maps.LatLng(hotel.location[0], hotel.location[1]),
-              title: hotel.name
+          for(resource of resourceMarkers) {
+            if(resource.type==("food")){
+              let marker = new google.maps.Marker({
+                map: map,
+                position: new google.maps.LatLng(resource.location[0], resource.location[1]),
+                title: resource.name
 
-            })
+
+              })
+            }
           }
         }
       </script>
