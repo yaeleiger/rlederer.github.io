@@ -36,11 +36,13 @@
           // Load JSON Data
           const resourceMarkers = getJSONMarkers();
           // Initialize Google Markers
+          var markerImage = 'https://image.ibb.co/m5CUCq/star.png';
           for(resource of resourceMarkers) {
             let marker = new google.maps.Marker({
               map: map,
               position: new google.maps.LatLng(resource.location[0], resource.location[1]),
-              title: resource.name
+              title: resource.name,
+              icon: markerImage
             })
           }
         }
