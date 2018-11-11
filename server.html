@@ -7,16 +7,111 @@
   <body onload = "loadMap()">
     <h2>Waltham Resources</h2>
     <div id = "map" style = "width:640px; height:480px;"></div>
+    <style>
+      .dropbtn {
+          background-color: #c61aff;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+      }
+
+      .dropbtn:hover, .dropbtn:focus {
+          background-color: #3e8e41;
+      }
+
+      #myInput {
+          border-box: box-sizing;
+          background-image: url('searchicon.png');
+          background-position: 14px 12px;
+          background-repeat: no-repeat;
+          font-size: 16px;
+          padding: 14px 20px 12px 45px;
+          border: none;
+          border-bottom: 1px solid #ddd;
+      }
+
+      #myInput:focus {outline: 3px solid #ddd;}
+
+      .dropdown {
+          position: relative;
+          display: inline-block;
+      }
+
+      .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f6f6f6;
+          min-width: 230px;
+          overflow: auto;
+          border: 1px solid #ddd;
+          z-index: 1;
+      }
+
+      .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+      }
+
+      .dropdown a:hover {background-color: #ddd;}
+
+      .show {display: block;}
+      </style>
+      </head>
+      <body>
+
+
+      <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Resource Type</button>
+        <div id="myDropdown" class="dropdown-content">
+          <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+          <a href="https://www.google.com">Food</a>
+          <a href="#healthcare">Health Care</a>
+          <a href="#housing">Housing</a>
+          <a href="#immigration">Immigration</a>
+          <a href="#legaladvice">Legal Advice</a>
+          <a href="#substancehelp">Substance Dependency Help</a>
+          <a href="#LGBTQ">LGBTQ+</a>
+        </div>
+      </div>
+
       <script>
+      /* When the user clicks on the button,
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+         console.log("hi")
+          document.getElementById("myDropdown").classList.toggle("show");
+
+      }
+
+      function filterFunction() {
+          var input, filter, ul, li, a, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          div = document.getElementById("myDropdown");
+          a = div.getElementsByTagName("a");
+          for (i = 0; i < a.length; i++) {
+              if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                  a[i].style.display = "";
+              } else {
+                  a[i].style.display = "none";
+              }
+          }
+      }
+    
+
 
         // fake JSON call
         function getJSONMarkers() {
            const markers = [
             {
+
               name:  "Rixos The Palm",
               location: [25.1212, 55.1535],
               type: "hello"
-
 
             },
             {
@@ -29,14 +124,24 @@
               location: [42.3765, -71.2356],
               type: "food"
 
+            },
+            {
+              name:  "Waltham Community Day Center",
+              location: [42.374250, -71.237430],
+              type: "immigration"
+            },
+            {
+              name: "Salvation Army",
+              location: [42.366010, -71.236430],
+              type: "immigration"
+            },
+            {
+              name: "Boys and Girls Club",
+              location: [42.3765, -71.2356],
+              type: "food"
             }
           ];
           return markers;
-
-
-
-
-
         }
 
         function loadMap() {
@@ -61,6 +166,11 @@
 
               })
             }
+            let marker = new google.maps.Marker({
+              map: map,
+              position: new google.maps.LatLng(resource.location[0], resource.location[1]),
+              title: resource.name
+            })
           }
         }
       </script>
