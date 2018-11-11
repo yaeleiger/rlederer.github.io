@@ -11,19 +11,22 @@
 
         // fake JSON call
         function getJSONMarkers() {
-          const markers = [
+           const markers = [
             {
               name:  "Waltham Community Day Center",
-              location: [42.374250, -71.237430]
+              location: [42.374250, -71.237430],
+              type: "shelter"
             },
             {
               name: "Salvation Army",
               location: [42.366010, -71.236430]
+              type: "food"
             },
             {
               name: "Boys and Girls Club",
               location: [42.3765, -71.2356]
-            }
+              type: "youth"
+            },
           ];
           return markers;
         }
@@ -41,15 +44,19 @@
 
           // Initialize Google Markers
           for(resource of resourceMarkers) {
-            let marker = new google.maps.Marker({
-              map: map,
-              position: new google.maps.LatLng(resource.location[0], resource.location[1]),
-              title: resource.name
-            })
+            if(resource.type==("food")){
+              let marker = new google.maps.Marker({
+                map: map,
+                position: new google.maps.LatLng(resource.location[0], resource.location[1]),
+                title: resource.name
+              })
+            }
           }
         }
       </script>
+
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBX9GFC7YWEnEBGM6aWQic5tq7OZ91jwFM&callback=initMap">
       </script>
+      
   </body>
 </html>
