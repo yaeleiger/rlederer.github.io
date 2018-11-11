@@ -12,7 +12,7 @@ h2 {
 }
 
 body {
-    background-color: lightblue;
+    background-color: white;
 }
 
       .dropbtn {
@@ -51,7 +51,7 @@ body {
       .dropdown-content {
           display: none;
           position: center;
-          background-color: lightblue;
+          background-color: white;
           min-width: 230px;
           overflow: auto;
           z-index: 1;
